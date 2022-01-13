@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{ 
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #353036;
+    --exDark: #2b2b2b;
+    scroll-behavior: smooth;
+    background-color: rgb(250, 241, 229);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+.navbar{
+    background:rgb(0, 0,0, 0.6);
+    padding: 1.2rem;
+}    
+
+.navbar-logo{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+
+}
+header{
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch
+}
+
+.bak-boks{
+    width: 80%;
+    background-color: #ffffff;
+    height: auto; 
+    margin: 50px auto;
+    text-align: center;	
+    display: flex;
+ }
+ .tekst h1{
+    font-family: var(--Playfair);
+ }
+ .tekst h2{
+    font-family: var(--Playfair);
+ }
+ .tekst h3{
+    font-family: var(--Playfair);
+ }
+
+.tekst{
+    width: 80%;
+    background-color: #ffffff;
+    height: auto; 
+    margin: 50px auto;
+    text-align: center;	
+    padding: 10vh;
+}
+#hoved h2{
+    font-family: var(--Playfair);
+}
+#hoved {
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    padding: 10vh;
+    background-color: white;  
+ 
+    }
+
+ul {
+    list-style-type: square;  
+    }
+ol {
+     list-style-type: upper-alpha;  /* decimal, lower-roman, lowe-alpha, upper-alpha */
+    }
+li{
+    margin: 2px;
+    padding: 2px;
+}
+
+@media screen and (max-width: 600px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bak-boks{
+    width: 100%;
+    margin: 0px;
+    }
+    .tekst{
+        padding: 3vh;
+    }
+    header{
+        min-height: 15vh;
+    }
+    #hoved{
+        padding: 3vh;   
+    }
+}
