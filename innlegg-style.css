@@ -38,7 +38,25 @@ body{
     text-decoration: none;
     font-family: var(--Playfair);
     letter-spacing: 1px;
-
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration:none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    color:rgb(196, 80, 105) ;
 }
 header{
     min-height: 25vh;
