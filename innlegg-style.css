@@ -113,6 +113,9 @@ li{
     margin: 2px;
     padding: 2px;
 }
+iframe{
+    padding-top: 20px;
+}
 
 @media screen and (max-width: 600px){
     .navbar-nav a{
@@ -140,5 +143,9 @@ li{
     }
     #hoved{
         padding: 3vh;   
+    }
+    iframe{
+        width: fit-content;
+        height:fit-content;
     }
 }
