@@ -147,5 +147,9 @@ iframe{
     iframe{
         width: fit-content;
         height:fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
 }
