@@ -77,13 +77,14 @@ header{
     color: rgb(255, 255, 255);
 }
 .banner-title{
-    font-size: 6vh;
+    font-size: 6vh; /*3rem*/
     font-family: var(--Playfair);
     line-height: 1.2;
 }
 .banner-title span{
     font-family: var(--Playfair);
     color: rgb(196, 80, 105);
+    font-size: 6vh;
 }
 .banner p{
     padding: 1rem 0 2rem 0;
