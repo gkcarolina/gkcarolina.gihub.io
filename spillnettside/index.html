@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <div class = "container">
+              <div class = "navbar-nav">
+                <div class="tekst" id="logo">dino.spill</div>
+                <div class="tekst" id = "info">Informasjon</div>
+              </div>
+            </div>
+        </nav>
+
+    <!-- The Modal -->
+    <div id="infoModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <br>
+        <h1>Informasjon</h1>
+        <br><br>
+        <h3>Hva er Dino.Spill:</h3>
+        <br>
+        <p>Dette spillet er inspirert av t-rex dinosaur spillet som vanligvis skjules på feilsiden "Ingen Internett-tilkobling" i Googles Chrome-nettleser og spilles offline.</p>
+        <br><br>
+        <h3>Hvordan spille:</h3>
+        <br>
+        <p>Spillet er i gang når man trykker på "Start". Dinosauren hopper ved å trykke på mellomrommstatsen. Prøv å score maksimalt poeng!</p>
+        <br><br>
+        <h3>Kilder:</h3>
+        <br>
+        <p>Inspirasjon tatt fra youtube video:</p>
+        <a href="https://www.youtube.com/watch?v=4Oz34co7VLY">Easy JavaScript Game Tutorial</a><br><br>
+        <h3>Utvikler:</h3>
+        <p>Carolina Gonzalez kanestrom</p>
+        <br><br>
+
+        
+        </div>
+    
+    </div>
+    <div id="kildeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>tekst</p>
+        </div>
+
+    </div>
+    
+
+    <div id="game">
+        <div id="dino"></div>
+        <div id="rock"></div>
+        <div id="resultater"></div>
+        <div class="boks"><button id ="startbutton" onclick="startButton()">Start</button></div>
+    </div>
+  <h1 id="score">0</h1>
+
+
+
+  <script src="script.js"></script>
+  <script src="startslutt.js"></script>
+</body>
+</html>
