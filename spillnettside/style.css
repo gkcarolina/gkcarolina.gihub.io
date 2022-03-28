@@ -167,12 +167,6 @@ body {
     cursor: pointer;
   }
 
-  @media screen and (max-width: 600px){
-    #game {
-        width: 90%;
-        height: 45vh;
-  }
-
   /*"viktigste" posisjonene til steinen*/
 @keyframes rock {
   0%{left: 600px;}
