@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: #ffffff;
+    background: url("./bilder/geometri-bakgrunn.jpg") no-repeat center fixed;
+    background-size: cover;  
+    cursor: default;
+}
+
+.navbar{
+    background: rgba(45, 150, 54, 0.6);
+    padding: 1.2rem;
+}
+
+.navbar{
+    padding: 0.8rem 0 0.2rem 0;
+    padding-right: 30px;
+    padding-left: 0.6rem;
+    text-align: right;
+}
+.navbar .tekst{
+    text-transform: uppercase;
+    font-family:monospace;
+    font-size: 1.1rem;
+    letter-spacing: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    display: inline-block;
+    padding: 0 .9rem 2rem;
+    padding-right: 45px;
+    padding-top: 2rem;
+    letter-spacing: 5px;
+    transition: opacity 0.5s ease;
+
+}
+.navbar .tekst:hover{
+    color:rgb(90, 56, 122);
+}
+#info{
+cursor: pointer;
+}
+#top10{
+  cursor: pointer;
+}
+#tilbake{
+  text-decoration: none;
+  color: aqua;
+}
+#logo{
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family:fantasy;
+    letter-spacing: 2px;
+    margin-top: -20px;
+    display:flex;
+    position:absolute;
+    align-self:flex-start;
+    font-weight: 600;
+}
+
+#brukerNavn{
+  margin-left: 30px;
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(60, 33, 83)
+}
+
+#beste{ 
+  margin: 90px auto;
+  margin-bottom: -110px;
+  text-align: center;
+  display: flex;
+  width: fit-content;
+  padding: 15px;
+  cursor: default;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#score { 
+  text-align: center;
+  cursor: default;
+}
+.navbar #tilbake a{
+color: white;
+text-decoration: none;
+cursor: pointer;
+}
+.navbar #tilbake a:hover{
+  color:rgb(90, 56, 122);
+}
+
+#game {
+  width: 600px;
+  height: 300px;
+  border:  4px solid rgb(104, 84, 122);
+  margin: auto;
+  margin-top: 20vh;
+  background-image: url(./bilder/background.jpg);
+  background-size: cover;
+  overflow: hidden;     /* Steinen forsvinner forbi diven*/
+  text-align: center;
+}
+
+#dino {
+  height: 75px;
+  width: 75px;
+  top: 225px;
+  position: relative;
+  background-image: url(./bilder/DinoConnection.gif);
+  background-size: cover;
+  animation: none;
+}
+
+#rock {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url(./bilder/rock.png);
+  background-size: cover;
+
+}
+
+.boks{
+  display: flex;
+	flex-direction:column;
+	align-items:center;
+  padding-bottom: 500px;
+}
+
+#startbutton {
+    background-color: rgba(173, 218, 173, 0.74);
+    font-size: 35px;
+    font-family:monospace;
+    border: 2px solid rgb(104, 84, 122);
+    color:rgb(104, 84, 122);
+    border-radius:5px;
+    margin-top: 110px;
+    position:absolute;
+    padding-bottom:5px;
+    padding-top:3px;
+    padding-left:10px;
+    padding-right: 10px;
+
+
+  }
+  
+  #startbutton:hover {
+    background-color:  rgba(21, 92, 19, 0.164);
+    color:rgb(173, 218, 173);
+    border: 3px solid rgb(173, 218, 173);
+    cursor: pointer;
+  } 
+#resultater{
+  background-color: none;
+  height: auto; 
+  margin: -90px auto;
+  text-align: center;
+  display: flex;
+  width: fit-content;
+  padding: 15px;
+  cursor: default;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.modal {
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.575);
+    color:rgb(86, 70, 100); 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+  }
+  
+ 
+  .modal-content {
+    background-color: rgb(212, 243, 228);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(104, 84, 122);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*top 10 modal*/
+
+  .topModal {
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.575);
+    color:rgb(86, 70, 100); 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+
+  }
+ 
+  .topModal-content {
+    background-color: rgb(212, 243, 228);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+  }
+
+  #plassTitle{
+    margin-top: 2%;
+  }
+  .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: rgb(104, 84, 122);
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+  /*"viktigste" posisjonene til steinen*/
+@keyframes rock {
+  0%{left: 600px;}
+  100%{left: -200px;}
+}
+  /*"viktigste" posisjonene til dinosaur under hoppet*/
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 100px;}
+  75%{top: 100px;}
+  100%{top: 225px;}
+}
+
+#resultater{
+  display: block;
+  z-index: 100;
+}
